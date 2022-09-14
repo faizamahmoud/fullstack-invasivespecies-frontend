@@ -1,0 +1,8 @@
+-> App
+  -> Header
+  -> Main |state: people|
+    -> Routes
+      -> Route |path: "/"|
+        -> People |props: people, createPeople|
+      -> Route |path="/people/:id|
+        -> Show |props: people, updatePeople, deletePeople|
